@@ -21,7 +21,8 @@ export default function Skills() {
       id="skills"
       className="relative overflow-hidden flex flex-col text-white body-font"
     >
-      <div className="container flex flex-wrap px-5 py-24 mx-auto items-center">
+      <div className="container flex flex-col md:flex-row px-5 py-24 mx-auto items-start md:items-center">
+
         {/* Left Section - Technical Skills Overview */}
         <div
           data-aos="fade-up"
@@ -31,14 +32,14 @@ export default function Skills() {
           <h1
             data-aos="fade-right"
             data-aos-delay="500"
-            className="sm:text-4xl text-2xl font-bold title-font mb-4 text-white"
+            className="sm:text-4xl text-3xl font-bold title-font mb-4 text-white"
           >
             Technical Skills
           </h1>
           <p
             data-aos="fade-right"
             data-aos-delay="600"
-            className="leading-relaxed text-lg text-gray-300"
+            className="leading-relaxed text-base sm:text-lg text-gray-300"
           >
             <span className="font-semibold text-orange-400">Languages:</span>{" "}
             Python, C, C++, C#, Java, JavaScript, PHP, SQL, HTML, CSS
@@ -57,10 +58,12 @@ export default function Skills() {
         <div
           data-aos="fade-left"
           data-aos-delay="500"
-          className="flex flex-col md:w-1/2 md:pl-12"
+          className="md:w-1/2 md:pl-12 w-full"
         >
-          <h2 className="text-2xl font-semibold mb-6">Core Tools & Tech</h2>
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-6">
+          <h2 className="text-2xl sm:text-3xl font-semibold mb-6 text-center md:text-left">
+            Core Tools & Tech
+          </h2>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-6 justify-items-center">
             {skills.map((skill, index) => (
               <div
                 key={index}
@@ -69,9 +72,11 @@ export default function Skills() {
                 <img
                   src={skill.img}
                   alt={skill.name}
-                  className="rounded-full w-20 h-20 object-cover shadow-lg group-hover:shadow-orange-500/50 transition duration-300"
+                  className="rounded-full w-16 sm:w-20 h-16 sm:h-20 object-cover shadow-lg group-hover:shadow-orange-500/50 transition duration-300"
                 />
-                <p className="mt-3 text-sm font-medium">{skill.name}</p>
+                <p className="mt-3 text-sm sm:text-base font-medium text-center">
+                  {skill.name}
+                </p>
               </div>
             ))}
           </div>
