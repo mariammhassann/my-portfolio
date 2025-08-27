@@ -18,19 +18,25 @@ export default function Hero() {
 
           {/* Left Text */}
           <div className='lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center relative'>
-
-            {/* Hi Icon */}
-            <img 
-              src={hi} 
-              data-aos='fade-up' 
-              data-aos-delay='400'
-              className='absolute top-[60%] left-[60%] md:top-[-30px] md:left-[450px] transform -translate-x-1/2 -translate-y-1/2 w-16 sm:w-20 h-16 sm:h-20 animate-bounce'
-            />
+{/* Hi Icon */}
+<img 
+  src={hi} 
+  data-aos='fade-up' 
+  data-aos-delay='400'
+  className='absolute 
+             top-[70%] left-[50%]   /* mobile: bottom area, centered */
+             sm:top-[70%] sm:left-[65%] /* small screens */
+             md:top-[-40px] md:left-[80%] /* medium screens */
+             lg:top-[-60px] lg:left-[75%] /* large screens */
+             transform -translate-x-1/2 -translate-y-1/2 
+             w-14 sm:w-16 md:w-20 h-14 sm:h-16 md:h-20 
+             animate-bounce z-20'
+/>
 
             {/* Title */}
             <h1 className='title-font sm:text-5xl text-3xl mb-4 font-bold text-white relative group'>
-              Hi! I&apos;m <span className='text-orange-400'>Mariam</span>
-              <span className='absolute left-0 -bottom-1 w-0 h-1 bg-orange-400 transition-all duration-500 group-hover:w-full'></span>
+              Hi! I&apos;m <span className='text-orange-500'>Mariam</span>
+              <span className='absolute left-0 -bottom-1 w-0 h-1 bg-orange- transition-all duration-500 group-hover:w-full'></span>
             </h1>
 
             {/* Description */}

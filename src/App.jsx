@@ -27,11 +27,10 @@ export default function App() {
     <Skills />
     <Experience />
     <Projects /> 
-       <Language />
-
+    <Language />
     <Contact />
     <Footer />
-      <Toaster position="top-center" reverseOrder={false} />
+   <Toaster position="top-center" reverseOrder={false} />
 
    </main>
   )

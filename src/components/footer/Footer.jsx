@@ -1,12 +1,10 @@
 import React from 'react';
-import { FaLinkedin, FaGithub, FaTwitter } from 'react-icons/fa';
+import { FaLinkedin, FaGithub } from 'react-icons/fa';
 
 export default function Footer() {
     const listNavbar = [
-        { name: 'Home', link: '#home' },
         { name: 'Skills', link: '#skills' },
         { name: 'Experience', link: '#experience' },
-        { name: 'Language', link: '#language' },
         { name: 'Projects', link: '#projects' },
     ];
 
